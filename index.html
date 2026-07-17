@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siyana Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Siyana Board</h1>
+
+    <div class="board">
+        <div class="column" data-status="todo">
+            <h2>To Do</h2>
+            <div class="cards"></div>
+        </div>
+        <div class="column" data-status="inprogress">
+            <h2>In Progress</h2>
+            <div class="cards"></div>
+        </div>
+        <div class="column" data-status="done">
+            <h2>Done</h2>
+            <div class="cards"></div>
+        </div>
+    </div>
+
+    <form id="addForm">
+        <input type="text" id="cardInput" placeholder="New task..." required>
+        <button type="submit">Add</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
